@@ -21,16 +21,34 @@ body{
 }
 
 .top_Lvl_3 {
+	// position: relative;
 	width: 860px;
 	margin: 0 auto;
 	text-align: center;
-	padding: 10em 0;
+	padding: 50px;
 	height: 540px;
 	background: #e7fff2;
-	// .block1 {
-	// 	height: 640px;
-	// 	background: #badfde;
-	// }
+	.navig {
+		text-align: left;
+		padding-left: 10px;
+	}
+
+}
+
+.transition {
+	position: absolute;
+	background: -moz-linear-gradient(90deg, rgba(231,255,242,0.2) 0%, rgba(190,207,46,1) 37%, rgba(242,213,212,1) 66%, rgba(215,236,235,0.2) 100%); /* ff3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(215,236,235,0.2)), color-stop(34%, rgba(242,213,212,1)), color-stop(63%, rgba(190,207,46,1)), color-stop(100%, rgba(231,255,242,0.2))); /* safari4+,chrome */
+	background: -webkit-linear-gradient(90deg, rgba(231,255,242,0.2) 0%, rgba(190,207,46,1) 37%, rgba(242,213,212,1) 66%, rgba(215,236,235,0.2) 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(90deg, rgba(231,255,242,0.2) 0%, rgba(190,207,46,1) 37%, rgba(242,213,212,1) 66%, rgba(215,236,235,0.2) 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(90deg, rgba(231,255,242,0.2) 0%, rgba(190,207,46,1) 37%, rgba(242,213,212,1) 66%, rgba(215,236,235,0.2) 100%); /* ie10+ */
+	background: linear-gradient(0deg, rgba(231,255,242,0.2) 0%, rgba(190,207,46,1) 37%, rgba(242,213,212,1) 66%, rgba(215,236,235,0.2) 100%); /* w3c */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7eceb', endColorstr='#e7fff2',GradientType=0 ); /* ie6-9 */
+	top: 540px-30px;
+	left: 0;
+	right: 0;
+	height: 60px;
+	width: 100%;
 }
 
 .services_Lvl_1 {
@@ -48,13 +66,9 @@ body{
 	width: 860px;
 	margin: 0 auto;
 	text-align: center;
-	padding: 10em 0;
+	padding: 50px;
 	height: 540px;
 	background: #d7eceb;
-	// .block1 {
-	// 	height: 640px;
-	// 	background: #badfde;
-	// }
 }
 
 .portfolio_Lvl_1 {
@@ -72,13 +86,9 @@ body{
 	width: 860px;
 	margin: 0 auto;
 	text-align: center;
-	padding: 10em 0;
+	padding: 50px;
 	height: 540px;
 	background: #9ce0de;
-	// .block1 {
-	// 	height: 640px;
-	// 	background: #badfde;
-	// }
 }
 
 .contacts_Lvl_1 {
@@ -96,14 +106,10 @@ body{
 	width: 860px;
 	margin: 0 auto;
 	text-align: center;
-	padding: 10em 0;
+	padding: 50px;
 	height: 540px;
 	background: #437188;
 	color: white;
-	// .block1 {
-	// 	height: 640px;
-	// 	background: #badfde;
-	// }
 }
 
 .footer_Lvl_1 {
@@ -120,13 +126,10 @@ body{
 .footer_Lvl_3 {
 	width: 860px;
 	margin: 0 auto;
-	text-align: center;
-	padding: 10em 0;
+	text-align: justify;
+	padding: 50px;
 	height: 540px;
 	background: #959da0;
 	color: white;
-	// .block1 {
-	// 	height: 640px;
-	// 	background: #badfde;
-	// }
 }
+
