@@ -1,108 +1,51 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* line 22, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
-
-/* line 24, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
-
-/* line 8, ../scss/screen.scss */
+/* line 26, ../scss/screen.scss */
 body {
   text-align: center;
   /*For IE6 Shenanigans*/
 }
 
-/* line 12, ../scss/screen.scss */
-.top_Lvl_1 {
+/* line 30, ../scss/screen.scss */
+.top-Lvl-1, .services-Lvl-1, .portfolio-Lvl-1, .contacts-Lvl-1, .footer-Lvl-1 {
   width: 100%;
-  background: url("https://pp.userapi.com/c636420/v636420406/5c5a9/aOiT_H3CeTM.jpg") repeat #d7eceb;
-  background-size: 20%;
 }
 
-/* line 17, ../scss/screen.scss */
-.top_Lvl_2 {
+/* line 34, ../scss/screen.scss */
+.top-Lvl-2, .services-Lvl-2, .portfolio-Lvl-2, .contacts-Lvl-2, .footer-Lvl-2 {
   width: 960px;
   margin: 0 auto;
-  background: rgba(231, 255, 242, 0.5);
 }
 
-/* line 23, ../scss/screen.scss */
-.top_Lvl_3 {
+/* line 39, ../scss/screen.scss */
+.top-Lvl-3, .services-Lvl-3, .portfolio-Lvl-3, .contacts-Lvl-3, .footer-Lvl-3 {
   width: 860px;
   margin: 0 auto;
   text-align: center;
   padding: 50px;
   height: 540px;
+}
+
+/* line 47, ../scss/screen.scss */
+.top-Lvl-1 {
+  background: url("https://pp.userapi.com/c636420/v636420406/5c5a9/aOiT_H3CeTM.jpg") repeat #d7eceb;
+  background-size: 20%;
+}
+
+/* line 52, ../scss/screen.scss */
+.top-Lvl-2 {
+  background: rgba(231, 255, 242, 0.5);
+}
+
+/* line 57, ../scss/screen.scss */
+.top-Lvl-3 {
   background: #e7fff2;
 }
-/* line 31, ../scss/screen.scss */
-.top_Lvl_3 .navig {
+/* line 61, ../scss/screen.scss */
+.top-Lvl-3 .navig {
   text-align: left;
   padding-left: 10px;
 }
 
-/* line 38, ../scss/screen.scss */
+/* line 68, ../scss/screen.scss */
 .transition {
   position: absolute;
   background: -moz-linear-gradient(90deg, rgba(231, 255, 242, 0.2) 0%, #becf2e 37%, #f2d5d4 66%, rgba(215, 236, 235, 0.2) 100%);
@@ -126,100 +69,68 @@ body {
   width: 100%;
 }
 
-/* line 54, ../scss/screen.scss */
-.services_Lvl_1 {
-  width: 100%;
+/* line 84, ../scss/screen.scss */
+.services-Lvl-1 {
   background: url("https://pp.userapi.com/c626218/v626218406/43410/I0dG1dhHVUk.jpg") repeat #becf2e;
   background-size: 20%;
 }
 
-/* line 59, ../scss/screen.scss */
-.services_Lvl_2 {
-  width: 960px;
-  margin: 0 auto;
+/* line 89, ../scss/screen.scss */
+.services-Lvl-2 {
   background: rgba(186, 223, 222, 0.5);
 }
 
-/* line 65, ../scss/screen.scss */
-.services_Lvl_3 {
-  width: 860px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 50px;
-  height: 540px;
+/* line 94, ../scss/screen.scss */
+.services-Lvl-3 {
   background: #d7eceb;
 }
 
-/* line 74, ../scss/screen.scss */
-.portfolio_Lvl_1 {
-  width: 100%;
+/* line 99, ../scss/screen.scss */
+.portfolio-Lvl-1 {
   background: url("https://pp.userapi.com/c837339/v837339406/3e167/HaWg8SfBqHw.jpg") repeat #fc5c01;
   background-size: 20%;
 }
 
-/* line 79, ../scss/screen.scss */
-.portfolio_Lvl_2 {
-  width: 960px;
-  margin: 0 auto;
+/* line 104, ../scss/screen.scss */
+.portfolio-Lvl-2 {
   background: rgba(60, 190, 185, 0.5);
 }
 
-/* line 85, ../scss/screen.scss */
-.portfolio_Lvl_3 {
-  width: 860px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 50px;
-  height: 540px;
+/* line 109, ../scss/screen.scss */
+.portfolio-Lvl-3 {
   background: #9ce0de;
 }
 
-/* line 94, ../scss/screen.scss */
-.contacts_Lvl_1 {
-  width: 100%;
+/* line 114, ../scss/screen.scss */
+.contacts-Lvl-1 {
   background: url("https://pp.userapi.com/c636420/v636420406/5c579/Oox8trD7ZVc.jpg") repeat #d4d3db;
   background-size: 20%;
 }
 
-/* line 99, ../scss/screen.scss */
-.contacts_Lvl_2 {
-  width: 960px;
-  margin: 0 auto;
+/* line 119, ../scss/screen.scss */
+.contacts-Lvl-2 {
   background: rgba(67, 113, 136, 0.5);
 }
 
-/* line 105, ../scss/screen.scss */
-.contacts_Lvl_3 {
-  width: 860px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 50px;
-  height: 540px;
+/* line 124, ../scss/screen.scss */
+.contacts-Lvl-3 {
   background: #437188;
   color: white;
 }
 
-/* line 115, ../scss/screen.scss */
-.footer_Lvl_1 {
-  width: 100%;
+/* line 130, ../scss/screen.scss */
+.footer-Lvl-1 {
   background: url("https://pp.userapi.com/c836135/v836135406/2c793/zCXdcoVQ6H8.jpg") repeat #14242c;
   background-size: 20%;
 }
 
-/* line 120, ../scss/screen.scss */
-.footer_Lvl_2 {
-  width: 960px;
-  margin: 0 auto;
+/* line 135, ../scss/screen.scss */
+.footer-Lvl-2 {
   background: rgba(149, 157, 160, 0.5);
 }
 
-/* line 126, ../scss/screen.scss */
-.footer_Lvl_3 {
-  width: 860px;
-  margin: 0 auto;
-  text-align: justify;
-  padding: 50px;
-  height: 540px;
+/* line 140, ../scss/screen.scss */
+.footer-Lvl-3 {
   background: #959da0;
   color: white;
 }

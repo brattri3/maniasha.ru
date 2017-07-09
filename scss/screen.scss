@@ -1,33 +1,63 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+	// @import "compass/reset";
 
-@import "compass/reset";
+	$top-img-path: "https://pp.userapi.com/c636420/v636420406/5c5a9/aOiT_H3CeTM.jpg";
+	$top-Lvl-1-bg-color: #d7eceb;
+	$services-img-path: "https://pp.userapi.com/c626218/v626218406/43410/I0dG1dhHVUk.jpg";
+	$services-Lvl-1-bg-color: #becf2e;
+	$portfolio-img-path: "https://pp.userapi.com/c837339/v837339406/3e167/HaWg8SfBqHw.jpg";
+	$portfolio-Lvl-1-bg-color: #fc5c01;
+	$contacts-img-path: "https://pp.userapi.com/c636420/v636420406/5c579/Oox8trD7ZVc.jpg";
+	$contacts-Lvl-1-bg-color: #d4d3db;
+	$footer-img-path: "https://pp.userapi.com/c836135/v836135406/2c793/zCXdcoVQ6H8.jpg";
+	$footer-Lvl-1-bg-color: #14242c;
 
-body{
+	$top-Lvl-2-bg-color: #e7fff2;
+	$services-Lvl-2-bg-color: #badfde;
+	$portfolio-Lvl-2-bg-color: #3cbeb9;
+	$contacts-Lvl-2-bg-color: #437188;
+	$footer-Lvl-2-bg-color: #959da0;
+	
+	$top-Lvl-3-bg-color: $top-Lvl-2-bg-color;
+	$services-Lvl-3-bg-color: #d7eceb;
+	$portfolio-Lvl-3-bg-color: #9ce0de;
+	$contacts-Lvl-3-bg-color: $contacts-Lvl-2-bg-color;
+	$footer-Lvl-3-bg-color: $footer-Lvl-2-bg-color;
+	
+body {
 	text-align:center; /*For IE6 Shenanigans*/ 
 }
 
-.top_Lvl_1 {
-		width: 100%;
-		background: url("https://pp.userapi.com/c636420/v636420406/5c5a9/aOiT_H3CeTM.jpg") repeat #d7eceb;
-		background-size: 20%;
-}
-.top_Lvl_2 {
-	width: 960px;
-	margin: 0 auto;
-	background: rgba(#e7fff2, 0.5);
+%Lvl-1 {
+	width: 100%;
 }
 
-.top_Lvl_3 {
-	// position: relative;
+%Lvl-2 {
+	width: 960px;
+	margin: 0 auto;
+}
+
+%Lvl-3 {
 	width: 860px;
 	margin: 0 auto;
 	text-align: center;
 	padding: 50px;
 	height: 540px;
-	background: #e7fff2;
+}
+
+.top-Lvl-1 {
+	@extend %Lvl-1;
+	background: url($top-img-path) repeat $top-Lvl-1-bg-color;
+	background-size: 20%;
+}
+.top-Lvl-2 {
+	@extend %Lvl-2;
+	background: rgba($top-Lvl-2-bg-color, 0.5);
+}
+
+.top-Lvl-3 {
+	// position: relative;
+	@extend %Lvl-3 ;
+	background: $top-Lvl-2-bg-color;
 	.navig {
 		text-align: left;
 		padding-left: 10px;
@@ -51,85 +81,65 @@ body{
 	width: 100%;
 }
 
-.services_Lvl_1 {
-		width: 100%;
-		background: url("https://pp.userapi.com/c626218/v626218406/43410/I0dG1dhHVUk.jpg") repeat #becf2e;
-		background-size: 20%;
+.services-Lvl-1 {
+	@extend %Lvl-1;
+	background: url($services-img-path) repeat $services-Lvl-1-bg-color;
+	background-size: 20%;
 }
-.services_Lvl_2 {
-	width: 960px;
-	margin: 0 auto;
-	background: rgba(#badfde, 0.5);
-}
-
-.services_Lvl_3 {
-	width: 860px;
-	margin: 0 auto;
-	text-align: center;
-	padding: 50px;
-	height: 540px;
-	background: #d7eceb;
+.services-Lvl-2 {
+	@extend %Lvl-2;
+	background: rgba($services-Lvl-2-bg-color, 0.5);
 }
 
-.portfolio_Lvl_1 {
-		width: 100%;
-		background: url("https://pp.userapi.com/c837339/v837339406/3e167/HaWg8SfBqHw.jpg") repeat #fc5c01;
-		background-size: 20%;
-}
-.portfolio_Lvl_2 {
-	width: 960px;
-	margin: 0 auto;
-	background: rgba(#3cbeb9, 0.5);
+.services-Lvl-3 {
+	@extend %Lvl-3;
+	background: $services-Lvl-3-bg-color;
 }
 
-.portfolio_Lvl_3 {
-	width: 860px;
-	margin: 0 auto;
-	text-align: center;
-	padding: 50px;
-	height: 540px;
-	background: #9ce0de;
+.portfolio-Lvl-1 {
+	@extend %Lvl-1;
+	background: url($portfolio-img-path) repeat $portfolio-Lvl-1-bg-color;
+	background-size: 20%;
+}
+.portfolio-Lvl-2 {
+	@extend %Lvl-2;
+	background: rgba($portfolio-Lvl-2-bg-color, 0.5);
 }
 
-.contacts_Lvl_1 {
-		width: 100%;
-		background: url("https://pp.userapi.com/c636420/v636420406/5c579/Oox8trD7ZVc.jpg") repeat #d4d3db;
-		background-size: 20%;
-}
-.contacts_Lvl_2 {
-	width: 960px;
-	margin: 0 auto;
-	background: rgba(#437188, 0.5);
+.portfolio-Lvl-3 {
+	@extend %Lvl-3;
+	background: $portfolio-Lvl-3-bg-color;
 }
 
-.contacts_Lvl_3 {
-	width: 860px;
-	margin: 0 auto;
-	text-align: center;
-	padding: 50px;
-	height: 540px;
-	background: #437188;
+.contacts-Lvl-1 {
+	@extend %Lvl-1;
+	background: url($contacts-img-path) repeat $contacts-Lvl-1-bg-color;
+	background-size: 20%;
+}
+.contacts-Lvl-2 {
+	@extend %Lvl-2;
+	background: rgba($contacts-Lvl-2-bg-color, 0.5);
+}
+
+.contacts-Lvl-3 {
+	@extend %Lvl-3;
+	background: $contacts-Lvl-2-bg-color;
 	color: white;
 }
 
-.footer_Lvl_1 {
-		width: 100%;
-		background: url("https://pp.userapi.com/c836135/v836135406/2c793/zCXdcoVQ6H8.jpg") repeat #14242c;
-		background-size: 20%;
+.footer-Lvl-1 {
+	@extend %Lvl-1;
+	background: url($footer-img-path) repeat $footer-Lvl-1-bg-color;
+	background-size: 20%;
 }
-.footer_Lvl_2 {
-	width: 960px;
-	margin: 0 auto;
-	background: rgba(#959da0, 0.5);
+.footer-Lvl-2 {
+	@extend %Lvl-2;
+	background: rgba($footer-Lvl-2-bg-color, 0.5);
 }
 
-.footer_Lvl_3 {
-	width: 860px;
-	margin: 0 auto;
-	text-align: justify;
-	padding: 50px;
-	height: 540px;
-	background: #959da0;
+.footer-Lvl-3 {
+	@extend %Lvl-3;
+	background: $footer-Lvl-2-bg-color;
 	color: white;
 }
 
